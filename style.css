@@ -494,8 +494,26 @@ button {
 
 }
 
+#about{
+    min-height: 60vh;
+  padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(120deg,#0d0b16,#1d1931);
+}
 
-
+#about div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 800px;
+    width: 95%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+}
 #contact a {
     font-size: 18px;
     text-transform: none;
