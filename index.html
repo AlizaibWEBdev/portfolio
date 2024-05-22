@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Alizaib full stack web developer</title>
+    <title>Document</title>
 </head>
 <style>
     ::-webkit-scrollbar {
@@ -97,7 +97,8 @@
                     <p class="gradient-text">Hi,</p>
                     <p class="normal">I am Alizaib</p>
                     <p class="normal"> full stack webiste developer </p>
-                    <a href="#contact"> <button class="blue">Contact now</button></a>
+                    <p class="normal">I help  you in creating webistes </p>
+                    <a  href="https://www.fiverr.com/alizaibwebdev" rel="nofollow" target="_blank"> <button class="blue">Hire me </button></a>
                 </div>
             </div>
             <div class="right">
@@ -106,7 +107,18 @@
 
         </div>
 
-
+        <div id="about">
+            <div class="hading">
+                <h1>About Me</h1>
+                <p>
+                    I am a skilled indvisual solo  full-stack web developer. I help enterprenires and bussnice man to grow there bussnice by creating webiste. I can create any kind webiste from simple landing paage to small startup webiste i am here to help you in anyting   
+                    i have foundation in coding and a passion for creating innovative solutions, My expertise includes front-end and back-end
+                    development, database management, and problem-solving. Committed to continuous learning and growth, I
+                    strive to stay updated with the latest industry trends and technologies. With a proven track record of
+                    delivering exceptional results.
+                </p>
+            </div>
+        </div>
         <div id="showo-off">
 
             <div itemscope itemtype='http://schema.org/Person' class='fiverr-seller-widget'
@@ -156,19 +168,7 @@
         </div>
 
         
-        <div id="about">
-            <div class="hading">
-                <h1>about</h1>
-                <p>
-                    I am a skilled  full-stack developer in PHP and MERN technologies. With a strong
-                    foundation in coding and a passion for creating innovative solutions, I specialize in delivering
-                    high-quality projects tailored to client requirements. My expertise includes front-end and back-end
-                    development, database management, and problem-solving. Committed to continuous learning and growth, I
-                    strive to stay updated with the latest industry trends and technologies. With a proven track record of
-                    delivering exceptional results, I am ready to contribute effectively to any project or team.
-                </p>
-            </div>
-        </div>
+       
         <div id="projects">
             <h1>Recent projects</h1>
 
@@ -233,7 +233,7 @@
                 <div class="slider">
                     <div class="slides">
                         <img src="./reviews/r.png" alt="Slide 1">
-                        <img src="./reviews/Stake strategies - Google Chrome 16_05_2024 11_55_04 pm.png" alt="Slide 1">
+                        <img src="./reviews/r.png" alt="Slide 1">
 
 
 
@@ -477,7 +477,21 @@
 
     })
 
+document.getElementById("home").addEventListener("mousemove",(e)=>{
+    let x = e.clientX;
+    let y = e.clientY;
 
+    let newdiv = document.createElement("div");
+    newdiv.classList.add("star");
+
+    newdiv.style.left = x + "px";
+    newdiv.style.top = y + "px";
+ 
+    document.body.appendChild(newdiv)
+    setTimeout(() => {
+        document.body.removeChild(newdiv)
+    },800);
+})
 
 </script>
 
