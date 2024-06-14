@@ -45,9 +45,9 @@ h1 {
 
 .normal {
     color: var(--normal);
-    font-size: 35px;
-    font-weight: 700;
-    text-shadow: 3px -1px 0px rgb(78, 78, 78);
+    font-size: 30px;
+    font-weight: 500;
+   
 
 }
 
@@ -77,9 +77,30 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 20px;
 }
+.left .contact {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    transform: translateY(25px);
+    justify-content: space-around;
 
+   
+}
+.left .contact a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:#ff002b;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
 @media only screen and (max-width:800px) {
     .logo {
         font-size: 25px;
@@ -89,9 +110,20 @@ h1 {
     .left {
         width: 100vw;
 
+        flex-direction: column-reverse;
+    }
+    .left .contact{
+        flex-direction: row;
+        width: 100%;
+       
+        height: fit-content;
+        margin: auto;
 
     }
-
+    #home{
+        height: 120vh !important;
+        
+    }
     #home .right {
         margin-top: 100px;
     }
@@ -265,8 +297,19 @@ header {
     background-size: cover;
     object-fit: cover;
     border-radius: 50%;
-    border: 10px solid #0048ff;
+   
 }
+.outline{
+    
+    width: 275px;
+    height: 275px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  border-radius: 50%;
+    border: 5px solid #0048ff;
+}
+
 
 .slider {
     position: relative;
@@ -503,6 +546,7 @@ button {
 }
 
 #about{
+  
     min-height: 60vh;
   padding: 20px;
     display: flex;
@@ -512,15 +556,19 @@ button {
 }
 
 #about div{
+    
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: 800px;
+    max-width: 1000px;
     width: 95%;
     text-align: center;
     color: white;
     font-size: 20px;
     justify-content: center;
+}
+#about p{
+    text-align: center;
 }
 #contact a {
     font-size: 18px;
